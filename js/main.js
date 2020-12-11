@@ -9,7 +9,7 @@ fontsG.href =
 // They are the rutes in the links
 let index = "/",
     sgp = "/pages/sgp/",
-    mp = "#",
+    mp = "/pages/mp",
     gps = "/pages/gps",
     daDr = "/pages/da-dr",
     login = "#",
