@@ -15,6 +15,7 @@ let index = "/",
     login = "#",
     b = "/pages/blog",
     c = "/pages/contact",
+    cart = "/pages/cart",
     // The l in the variables does references to the links of the website.
     lindex = document.getElementById("lindex"),
     lsgp = document.getElementById("lsgp"),
@@ -22,6 +23,7 @@ let index = "/",
     lgps = document.getElementById("lgps"),
     ldaDr = document.getElementById("ldaDr"),
     llogin = document.getElementById("llogin"),
+    lcart = document.getElementById("lcart"),
     // The "f" in the variables does references to links in the footer
     fbgp = document.getElementById("fbgp"),
     fsgp = document.getElementById("fsgp"),
@@ -35,6 +37,7 @@ lindex.href = index;
 lgps.href = gps;
 ldaDr.href = daDr;
 llogin.href = login;
+lcart.href = cart;
 
 // End function menu nav
 
