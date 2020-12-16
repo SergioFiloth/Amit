@@ -24,12 +24,14 @@
     display: flex;
     flex-direction: column;
     padding: 2rem 1rem;
+    padding-top: 0;
     border-right: 1px solid #ccc;
 }
 
 .formStarted {
     width: 60%;
     padding: 2rem;
+    padding-top: 0;
 }
 
 .label {
@@ -66,4 +68,11 @@
     display: inline-block;
     text-align: right;
     color: #4882b4;
+}
+
+.titleF {
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: 700;
 }
