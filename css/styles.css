@@ -286,6 +286,7 @@ a {
     border: 1.5px solid transparent;
     transition: border .3s;
     border-radius: 15px;
+    color: #000;
 }
 
 .learnCard:hover {

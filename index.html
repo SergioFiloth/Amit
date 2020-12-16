@@ -60,7 +60,7 @@
                 Let the leading and the most relevant media talk about your business
             </p>
             <div>
-                <a href="#" class="btn"><i class="fas fa-link iconBtn-right"></i> Buy Guest Post</a>
+                <a id="bBgp" class="btn"><i class="fas fa-link iconBtn-right"></i> Buy Guest Post</a>
             </div>
         </article>
         <article class="main__article text-left-b">
@@ -240,7 +240,7 @@
                     The latest news about the guest blogging and the BuySellGuestPost line of products and services.
                 </p>
             </div>
-            <div class="learnCard" data-link="#" id="linkM">
+            <a class="learnCard" id="linkM">
                 <div class="learTitle">
                     <div class="iconLearn">
                         <i class="fas fa-cart-plus"></i>
@@ -250,7 +250,7 @@
                 <p>
                     Get quality contextual backlinks, view guest blogging sites marketplace that includes 2500+ sites.
                 </p>
-            </div>
+            </a>
             <div class="learnCard">
                 <div class="learTitle">
                     <div class="iconLearn">
@@ -297,8 +297,10 @@
     <script src="js/main.js"></script>
     <script>
         //   "b" does reference to button or a with class btn
-        bsgp = document.getElementById("bSgp");
+        let bsgp = document.getElementById("bSgp"),
+            bbgp = document.getElementById("bBgp")
         bsgp.href = sgp;
+        bbgp.href = mp;
     </script>
 </body>
 

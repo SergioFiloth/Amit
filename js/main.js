@@ -12,7 +12,7 @@ let index = "/",
     mp = "/pages/mp",
     gps = "/pages/gps",
     daDr = "/pages/da-dr",
-    login = "#",
+    login = "/pages/login",
     b = "/pages/blog",
     c = "/pages/contact",
     cart = "/pages/cart",
@@ -24,6 +24,7 @@ let index = "/",
     ldaDr = document.getElementById("ldaDr"),
     llogin = document.getElementById("llogin"),
     lcart = document.getElementById("lcart"),
+    linkM = document.getElementById("linkM"),
     // The "f" in the variables does references to links in the footer
     fbgp = document.getElementById("fbgp"),
     fsgp = document.getElementById("fsgp"),
@@ -36,7 +37,15 @@ lindex.href = index;
 (lmp.href = mp), (fbgp.href = mp), (fmp.href = mp);
 lgps.href = gps;
 ldaDr.href = daDr;
-llogin.href = login;
+
+if (llogin) {
+    llogin.href = login;
+}
+
+if (linkM) {
+    linkM.href = mp
+}
+
 lcart.href = cart;
 
 // End function menu nav
