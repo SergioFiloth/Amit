@@ -242,3 +242,47 @@
 .contentFaqs>p {
     margin-bottom: 1rem;
 }
+
+@media(max-width: 768px) {
+    .ulP {
+        display: block;
+    }
+
+    .ulP>* {
+        margin-bottom: 1rem;
+    }
+
+    .characteristics {
+        padding: 0;
+    }
+
+    .characteristicsChart {
+        display: block;
+    }
+
+    .plains {
+        display: block;
+        padding: 1rem;
+    }
+
+    .plains>* {
+        margin-bottom: 1rem;
+    }
+
+    .bgp {
+        display: block;
+    }
+
+    .imgBgp {
+        width: 75%;
+        margin-bottom: 2rem;
+    }
+
+    .faqs {
+        padding: 1rem;
+    }
+
+    .contPlains {
+        padding: 0;
+    }
+}

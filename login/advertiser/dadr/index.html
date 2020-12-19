@@ -19,36 +19,40 @@
 
 <body>
     <nav class="navigation" id="nav">
-        <div id="menuT" class="navigation__menuT">
-            <i class="fas fa-bars"></i>
-        </div>
         <div class="nav">
-            <div class="nav__link">
+            <div class="cMenuT">
                 <a id="lindex">
                     <img src="../../../img/logo.png" class="nav__link--logo" alt="Logo X">
                 </a>
-                <ul class="nav__link--navbar">
-                    <li class="navbar">
-                        <a class="navbar__link" id="lsgp">Sell Guest Posts</a>
-                    </li>
-                    <li class="navbar">
-                        <a class="navbar__link" id="lmp">Marketplace</a>
-                    </li>
-                    <li class="navbar">
-                        <a class="navbar__link" id="lgps">Guest Posting Services</a>
-                    </li>
-                    <li class="navbar">
-                        <a class="navbar__link" id="ldaDr">Increase DA/DR</a>
-                    </li>
-                </ul>
+                <div id="menuT" class="navigation__menuT">
+                    <i class="fas fa-bars"></i>
+                </div>
             </div>
-            <div class="nav__cardAndLogin">
-                <ul class="nav__cardAndLogin--ul">
-                    <a class="cart" id="lcart">
-                        <li class="numberItem"><i class="fas fa-cart-plus cart"></i> 0 item</li>
-                    </a>
-                    <li class="login"><a id="llogin">Login</a></li>
-                </ul>
+            <div class="contMenu desactive" id="contNav">
+                <div class="nav__link">
+                    <ul class="nav__link--navbar">
+                        <li class="navbar">
+                            <a class="navbar__link" id="lsgp">Sell Guest Posts</a>
+                        </li>
+                        <li class="navbar">
+                            <a class="navbar__link" id="lmp">Marketplace</a>
+                        </li>
+                        <li class="navbar">
+                            <a class="navbar__link" id="lgps">Guest Posting Services</a>
+                        </li>
+                        <li class="navbar">
+                            <a class="navbar__link" id="ldaDr">Increase DA/DR</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav__cardAndLogin">
+                    <ul class="nav__cardAndLogin--ul">
+                        <a class="cart" id="lcart">
+                            <li class="numberItem"><i class="fas fa-cart-plus cart"></i> 0 item</li>
+                        </a>
+                        <li class="login"><a id="llogin">Login</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </nav>
@@ -57,7 +61,7 @@
             Advertiser <span class="sT">» Service Orders</span>
         </h1>
     </div>
-    <div class="main">
+    <div class="main container">
         <aside class="aside">
             <h2 class="titleA">Account Balance</h2>
             <p class="priceA">Value</p>
@@ -100,7 +104,7 @@
             </a>
             <table class="tableO">
                 <tbody class="bodyT">
-                    <tr class="trH">
+                    <tr class="trH" colspan="6">
                         <th>DADR Services Orders</th>
                     </tr>
                     <tr class="trD">

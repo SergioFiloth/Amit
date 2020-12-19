@@ -57,6 +57,7 @@
 .promotionSeo {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    align-items: center;
     padding: 3rem;
     padding-bottom: 7rem;
     grid-gap: 0 3rem;
@@ -207,4 +208,47 @@
     width: 100%;
     justify-content: center;
     margin-top: 2rem;
+}
+
+@media(max-width: 768px) {
+    .moreSpecification {
+        display: block;
+    }
+
+    .miniArticles {
+        display: block;
+        text-align: left;
+    }
+
+    .getStarted {
+        display: block;
+    }
+
+    .getStarted>* {
+        width: 100%;
+        border: none;
+        padding: 0 2rem;
+    }
+}
+
+@media (max-width: 1200px) {
+    .sellC {
+        display: block;
+    }
+
+    .promotionSeo {
+        display: block;
+    }
+
+    .logo {
+        margin-bottom: 2rem;
+    }
+
+    .miniArticles {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cardArticle {
+        margin-bottom: 2rem;
+    }
 }

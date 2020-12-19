@@ -81,12 +81,14 @@ a {
     width: 100%;
     justify-content: space-between;
     padding: .3rem;
+    align-items: center;
 }
 
 .nav__link {
     display: flex;
     align-items: center;
 }
+
 
 .nav__link--logo {
     max-height: 50px;
@@ -103,7 +105,6 @@ a {
 }
 
 .navbar__link {
-    display: flex;
     display: inline-block;
     padding: 1rem;
     text-align: center;
@@ -164,7 +165,6 @@ a {
 }
 
 .main__article {
-    /* background-color: red; */
     width: 50%;
     padding: 1.5rem 1.5rem 3rem;
     display: flex;
@@ -395,4 +395,129 @@ a {
 
 .sSecLink:last-child {
     border-right: none;
+}
+
+a {
+    display: inline-block;
+}
+
+/* Responsive */
+
+@media (max-width: 1200px) {
+    .cMenuT {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 0 2rem;
+    }
+
+    .navigation__menuT {
+        display: inline-block;
+        font-size: 1.5rem;
+    }
+
+    .contMenu {
+        display: block;
+        width: 100%;
+    }
+
+    .contMenu.desactive {
+        display: none;
+    }
+
+    .nav {
+        display: block;
+    }
+
+    .nav__link {
+        display: block;
+    }
+
+    .nav__link--navbar {
+        display: block;
+        width: 100%;
+    }
+
+    .navbar__link {
+        text-align: left;
+        display: block;
+        width: 100%;
+    }
+
+    .nav__cardAndLogin--ul {
+        display: block;
+    }
+
+    .nav__cardAndLogin--ul>* {
+        margin-bottom: .5rem;
+    }
+
+    .mainA {
+        display: block;
+        padding: 1rem;
+    }
+
+    .main__article {
+        text-align: left;
+        width: 100%;
+        border: none;
+    }
+
+    .patners {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .faqs {
+        display: block;
+    }
+
+    .learn__more {
+        display: block;
+    }
+
+    .footer__links {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .footer__description {
+        width: 100%;
+    }
+}
+
+@media(min-width: 1200px) {
+    .cMenuT {
+        display: inline-flex;
+    }
+
+    .navigation__menuT {
+        display: none;
+    }
+
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        padding: .3rem;
+        align-items: center;
+    }
+
+    .nav__link {
+        display: flex;
+        align-items: center;
+    }
+
+    .nav__link--navbar {
+        display: flex;
+        list-style: none;
+    }
+
+    .contMenu {
+        display: flex;
+        width: 100%;
+    }
+
+    .contMenu.desactive {
+        display: flex;
+    }
 }

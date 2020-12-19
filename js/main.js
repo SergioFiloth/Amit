@@ -16,6 +16,7 @@ let index = "/",
     b = "/pages/blog",
     c = "/pages/contact",
     cart = "/pages/cart",
+    faqs = "/pages/faqs",
     // The l in the variables does references to the links of the website.
     lindex = document.getElementById("lindex"),
     lsgp = document.getElementById("lsgp"),
@@ -30,13 +31,19 @@ let index = "/",
     fsgp = document.getElementById("fsgp"),
     fmp = document.getElementById("fmp"),
     fb = document.getElementById("fb"),
-    fc = document.getElementById("fc");
+    fc = document.getElementById("fc"),
+    ff = document.getElementById("ff"),
+    ft = document.getElementById("ft"),
+    fp = document.getElementById("fp"),
+    fr = document.getElementById("fr");
 
 lindex.href = index;
 (lsgp.href = sgp), (fsgp.href = sgp);
 (lmp.href = mp), (fbgp.href = mp), (fmp.href = mp);
 lgps.href = gps;
 ldaDr.href = daDr;
+fc.href = c;
+ff.href = faqs;
 
 if (llogin) {
     llogin.href = login;
@@ -89,3 +96,12 @@ if (btnItems) {
         }
     };
 }
+
+// Menu Functionality
+
+let btnM = document.getElementById("menuT"),
+    contN = document.getElementById("contNav")
+
+btnM.addEventListener("click", () => {
+    contN.classList.toggle("desactive")
+})

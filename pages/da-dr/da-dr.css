@@ -227,3 +227,28 @@ ul {
     --Background: #123147;
     --Title: #ffffff;
 }
+
+@media(max-width:1200px) {
+    .cont {
+        width: 100%;
+    }
+
+    .cpl,
+    .cpr {
+        clip-path: none;
+        margin-bottom: 2rem;
+        width: 100%;
+    }
+
+    .cImg {
+        display: none;
+    }
+
+    .contCards {
+        display: block;
+    }
+
+    .contCards>* {
+        margin-bottom: 2rem;
+    }
+}
