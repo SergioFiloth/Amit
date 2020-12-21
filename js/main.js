@@ -9,14 +9,17 @@ fontsG.href =
 // They are the rutes in the links
 let index = "/",
     sgp = "/pages/sgp/",
-    mp = "/pages/mp",
-    gps = "/pages/gps",
-    daDr = "/pages/da-dr",
-    login = "/pages/login",
-    b = "/pages/blog",
-    c = "/pages/contact",
-    cart = "/pages/cart",
-    faqs = "/pages/faqs",
+    mp = "/pages/mp/",
+    gps = "/pages/gps/",
+    daDr = "/pages/da-dr/",
+    login = "/pages/login/",
+    b = "/pages/blog/",
+    c = "/pages/contact/",
+    cart = "/pages/cart/",
+    faqs = "/pages/faqs/",
+    term = "/pages/term/",
+    privacy = "/pages/privacy/",
+    refunds = "/pages/refunds/",
     // The l in the variables does references to the links of the website.
     lindex = document.getElementById("lindex"),
     lsgp = document.getElementById("lsgp"),
@@ -44,6 +47,14 @@ lgps.href = gps;
 ldaDr.href = daDr;
 fc.href = c;
 ff.href = faqs;
+ft.href = term;
+fp.href = privacy;
+fr.href = refunds;
+
+if (fb) {
+    let father = fb.parentNode
+    father.removeChild(fb)
+}
 
 if (llogin) {
     llogin.href = login;
