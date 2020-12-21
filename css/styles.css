@@ -327,6 +327,11 @@ a {
     font-weight: 700;
 }
 
+.contMenu {
+    display: flex;
+    justify-content: space-between;
+}
+
 /* Separator line in the footer */
 .fS {
     margin: 2rem 15%;
@@ -399,6 +404,34 @@ a {
 
 a {
     display: inline-block;
+}
+
+.nav__cardAndLogin {
+    position: relative;
+}
+
+.navLogin {
+    display: none;
+    background-color: #29518d;
+    position: absolute;
+    right: 0;
+    line-height: 2;
+    padding: 1rem .5rem;
+}
+
+.liL {
+    border-radius: 5px;
+    margin-bottom: .5rem;
+    display: block;
+    transition: background .3s;
+}
+
+.liL:hover {
+    background-color: #29718d;
+}
+
+.navLogin.show {
+    display: block;
 }
 
 /* Responsive */
@@ -482,6 +515,19 @@ a {
     }
 
     .footer__description {
+        width: 100%;
+    }
+
+    .nav__cardAndLogin {
+        display: block;
+    }
+
+    .nav__cardAndLogin--ul {
+        width: 100%;
+    }
+
+    .navLogin {
+        position: static;
         width: 100%;
     }
 }

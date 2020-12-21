@@ -42,6 +42,7 @@ let index = "/",
 
 lindex.href = index;
 (lsgp.href = sgp), (fsgp.href = sgp);
+
 (lmp.href = mp), (fbgp.href = mp), (fmp.href = mp);
 lgps.href = gps;
 ldaDr.href = daDr;
@@ -84,7 +85,20 @@ window.onscroll = () => {
     principalUbication = actualMove;
 };
 
-fean.style.marginTop = `calc(${hNavbar}px + .6rem)`;
+let nL = document.getElementById("nL"),
+    btnL = document.getElementById("btnL");
+
+btnL.addEventListener("click", () => {
+    nL.classList.toggle("show");
+})
+
+if (fean) {
+    fean.style.marginTop = `calc(${hNavbar}px + .6rem)`;
+}
+if (nL) {
+    nL.style.top = `calc(${hNavbar}px + .6rem)`;
+}
+
 
 // FAQs Card
 

@@ -4,17 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Advertiser Dashboard</title>
+    <title>Navigation</title>
     <!-- Here we add Roboto Font of Google -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" id="fontsGoogle">
     <!-- Here we use fontawesome 5.15.1 -->
-    <script src="../../js/allFontAwesome.js"></script>
+    <script src="js/allFontAwesome.js"></script>
     <!-- Here we use normalize.css for nomalizer the styles css -->
-    <link rel="stylesheet" href="../../css/normalize.css">
+    <link rel="stylesheet" href="css/normalize.css">
     <!-- Principal Styles -->
-    <link rel="stylesheet" href="../../css/styles.css">
-    <link rel="stylesheet" href="../css/panel.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
@@ -50,101 +49,22 @@
                         <a class="cart" id="lcart">
                             <li class="numberItem"><i class="fas fa-cart-plus cart"></i> 0 item</li>
                         </a>
-                        <li class="login"><a id="llogin">Login</a></li>
+                        <li class="login" id="btnL">
+                            <a>Amit</a>
+                        </li>
+                    </ul>
+                    <ul class="navLogin" id="nL">
+                        <li class="liL"><a href="">Buyer</a></li>
+                        <li class="liL"><a href="">Seller</a></li>
+                        <li class="liL"><a href="">My Profile</a></li>
+                        <li class="liL"><a href="">Transactions History</a></li>
+                        <li class="liL"><a href="">Balance: $value</a></li>
+                        <li class="liL"><a href="">Logout</a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </nav>
-    <div class="main mN" id="fean">
-        <h1 class="title">
-            Advertiser <span class="sT">» Dashboard</span>
-        </h1>
-    </div>
-    <div class="main container">
-        <aside class="aside">
-            <h2 class="titleA">Account Balance</h2>
-            <p class="priceA">Value</p>
-            <a href="funds/" class="fundsAdd">
-                + Deposit Funds
-            </a>
-            <nav class="navA">
-                <ul class="ulA">
-                    <li class="liA active">
-                        Dashboard
-                    </li>
-                    <a href="orders/">
-                        <li class="liA">
-                            Orders
-                        </li>
-                    </a>
-                    <a href="so/">
-                        <li class="liA">
-                            Services Orders
-                        </li>
-                    </a>
-                    <a href="dadr/">
-                        <li class=" liA">
-                            DADR Services Orders
-                        </li>
-                    </a>
-                </ul>
-            </nav>
-            <img src="../aside.jpg" alt="dadr Increase" class="dadr">
-        </aside>
-        <div class="main principal">
-            <div class="info">
-                <div>
-                    <div class="contI">
-                        <h3 class="tC">
-                            Total purchases
-                        </h3>
-                        <div class="value">
-                            $nValue
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="contI">
-                        <h3 class="tC">
-                            Complete Orders
-                        </h3>
-                        <div class="value">
-                            $nValue
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="contI">
-                        <h3 class="tC">
-                            Active orders
-                        </h3>
-                        <div class="value">
-                            $nValue
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <table class="tableO">
-                <tbody class="bodyT">
-                    <tr class="trH">
-                        <th>Orders</th>
-                    </tr>
-                    <tr class="trD">
-                        <td>Order</td>
-                        <td>Item</td>
-                        <td>Price</td>
-                        <td>Date</td>
-                        <td>Due Date</td>
-                        <td>Status</td>
-                    </tr>
-                </tbody>
-            </table>
-            <div class="cBO">
-                <a href="orders/" class="btnO">Go to Orders Page</a>
-            </div>
-        </div>
-    </div>
     <footer class="footer">
         <div class="firtSection">
             <div class="footer__links">
@@ -175,10 +95,7 @@
             </div>
         </div>
     </footer>
-    <script src="../../js/main.js"></script>
-    <script>
-        fean.style.marginTop = `${hNavbar}px`;
-    </script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
