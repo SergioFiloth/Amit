@@ -132,6 +132,7 @@ textarea {
     padding: 1rem;
     border: 1px solid #ccc;
     border-radius: 5px;
+    background-color: #fff;
 }
 
 .chose.active {
@@ -176,7 +177,71 @@ textarea {
 }
 
 .service.t {
-    font-size: 1.titleH2;
+    font-size: 1rem;
+    font-weight: 700;
     color: #000000;
     border-bottom: none;
+}
+
+@media(max-width: 768px) {
+    .steps {
+        display: block;
+    }
+
+    .step {
+        width: 100%;
+    }
+
+    .mBuy {
+        display: block;
+    }
+
+    .mBuy>* {
+        width: 100%;
+    }
+
+    .items {
+        margin-bottom: 2rem;
+    }
+
+    .descriptionI {
+        display: block;
+        flex: start;
+    }
+
+    .descriptionI>* {
+        text-align: left;
+        margin-bottom: 1rem;
+    }
+
+    .sChose {
+        display: block;
+    }
+
+    .sChose>* {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .step:nth-child(1) {
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 5px;
+    }
+
+    .step:nth-child(3) {
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+}
+
+/* 
+@media(max-width:480px) {
+} */
+
+button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
 }

@@ -30,3 +30,5 @@ rT.addEventListener('mousemove', e => {
     })
     nT.value = v.value
 })
+
+fean.style.marginTop = `${hNavbar}px`;

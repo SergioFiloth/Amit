@@ -61,10 +61,12 @@
 .categorie {
     padding: 0.5rem;
     color: #0068A3;
+    background-color: #fff;
     border: 1px solid #CCCCCC;
     border-radius: 5px;
     font-size: 1rem;
     transition: border .3s;
+    text-align: left;
 }
 
 .categorie:hover {

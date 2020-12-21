@@ -87,10 +87,11 @@ window.onscroll = () => {
 
 let nL = document.getElementById("nL"),
     btnL = document.getElementById("btnL");
-
-btnL.addEventListener("click", () => {
-    nL.classList.toggle("show");
-})
+if (btnL || nL) {
+    btnL.addEventListener("click", () => {
+        nL.classList.toggle("show");
+    })
+}
 
 if (fean) {
     fean.style.marginTop = `calc(${hNavbar}px + .6rem)`;
