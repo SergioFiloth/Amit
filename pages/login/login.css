@@ -76,3 +76,13 @@
     text-align: center;
     font-weight: 700;
 }
+
+@media(max-width: 768px){
+	.loginC{
+		display: block;
+	}
+	.loginC>*{
+		width: 100%;
+		border: none;
+	}
+}
